@@ -1,0 +1,22 @@
+<app-encabezado></app-encabezado>
+
+<ion-content>
+  <ion-list class="custom-list">
+    <div class="custom-container-title">
+      <ion-list-header class="list-ini" color="primary">
+        <ion-label>Mis ramos</ion-label>
+      </ion-list-header>
+    </div>
+    <div class="ramos-container">
+      <ion-accordion-group class="horizontal-accordion">
+        <ion-accordion *ngFor="let ramo of ramos" [value]="ramo.nombre">
+          <ion-item slot="header" color="light">
+            <ion-label>{{ ramo.nombre }}</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">Porcentaje de asistencia: {{ ramo.asistencia }}%</div>
+          <div class="ion-padding" slot="content">Fechas de asistencia: {{ ramo.fechas.join(', ') }}</div>
+        </ion-accordion>
+      </ion-accordion-group>
+    </div>
+  </ion-list>
+</ion-content>

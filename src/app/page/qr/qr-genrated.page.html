@@ -1,0 +1,11 @@
+<app-encabezado></app-encabezado>
+
+<ion-content>
+  <ion-list class="custom-list">
+    <div class="qr-container">
+      <img [src]="qrUrl" alt="Código QR" class="center-image">
+    </div>
+  </ion-list>
+
+  <ion-button expand="full" (click)="onGenerateNewQr()">Generar nuevo QR</ion-button>
+</ion-content>

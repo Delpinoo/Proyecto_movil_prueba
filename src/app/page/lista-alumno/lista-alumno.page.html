@@ -1,0 +1,18 @@
+<app-encabezado></app-encabezado>
+<ion-content>
+  <ion-card class="custom-class">
+    <ion-searchbar placeholder="Buscarme en lista" class="search"></ion-searchbar>
+    <ion-card-content>
+      <div class="list-container">
+        <ion-list>
+          <ion-item *ngFor="let item of items; let index">
+            <ion-avatar slot="start">
+              <img [src]="'https://picsum.photos/80/80?random=' + index" alt="avatar" />
+            </ion-avatar>
+            <ion-label>{{ item }}</ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

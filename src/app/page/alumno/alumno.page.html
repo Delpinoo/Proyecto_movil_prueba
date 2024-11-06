@@ -1,0 +1,30 @@
+<app-encabezado></app-encabezado>
+
+<ion-content>
+  <ion-list class="custom-list">
+    <div class="container">
+      <div class="link-card" (click)="scanQRCode()">
+        <img src="assets/images/qr.png" alt="Escanear QR" class="center-image">
+        <ion-button expand="block" class="center-button">Escanear QR</ion-button>
+      </div>
+    </div>
+  </ion-list>
+
+  <ion-list class="custom-list-second">
+    <div class="container">
+      <div class="link-card" (click)="goToRamos()">
+        <img src="assets/images/cuaderno.png" alt="Ver mis ramos" class="center-imagen">
+        <ion-button expand="block" class="center-button">Ver mis ramos</ion-button>
+      </div>
+    </div>
+  </ion-list>
+
+  <ion-list class="custom-list-second">
+    <div class="container">
+      <div class="link-card" (click)="goTolista_alumno()">
+        <img src="assets/images/icon-list.png" alt="Ver mis ramos" class="center-imagen">
+        <ion-button expand="block" class="center-button">Ver lista</ion-button>
+      </div>
+    </div>
+  </ion-list>
+</ion-content>

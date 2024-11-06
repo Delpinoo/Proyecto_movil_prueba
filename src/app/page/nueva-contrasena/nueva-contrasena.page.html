@@ -1,0 +1,28 @@
+<app-encabezado></app-encabezado>
+
+<ion-content >
+  <ion-list class="custom-list">
+    <div class="container">    
+      <form>
+      <ion-list-header class="header-recover" color="primary">
+        <ion-label>Recuperar contraseña</ion-label>
+      </ion-list-header>
+      <ion-item>
+        <ion-label position="floating">Nueva Contraseña</ion-label>
+        <ion-input type="password" required></ion-input>
+      </ion-item>
+
+      <ion-item class="border-password">
+        <ion-label position="floating">Confirmar Nueva Contraseña</ion-label>
+        <ion-input type="password" required></ion-input>
+      </ion-item>
+
+    <!--
+      <ion-button expand="full" color="primary" class="ion-margin-top">Recuperar Contraseña</ion-button>
+    -->
+    <ion-button expand="full" color="primary" class="ion-margin-top" (click)="cambiarContrasena()">Recuperar Contraseña</ion-button>
+    </form>
+    </div>
+</ion-list> 
+
+</ion-content>

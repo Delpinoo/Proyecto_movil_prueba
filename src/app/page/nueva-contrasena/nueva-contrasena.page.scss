@@ -1,0 +1,58 @@
+ion-content {
+    --background: #011941;
+}
+
+.custom-list {
+    width: 90%;
+    height: 380px;
+    max-width: 400px;
+    padding: 20px 1px;
+    margin-top: 90px;
+    margin-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #e0e0e0; 
+    border-radius: 15px; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.header-recover {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.border-password {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.custom-alert {
+    .alert-button {
+      color: white !important; // Cambia el color a blanco
+      background-color: transparent !important; // Fondo transparente
+    }
+}
+
+ion-alert {
+    .alert-button {
+      color: white !important; // Cambia el color del texto a blanco
+      background-color: #003ea8 !important; // Cambia el color de fondo del botón
+    }
+}
+
+ion-alert {
+    --background: #011941; // Color de fondo de la alerta
+    
+    .alert-button {
+      color: white !important; // Cambia el color del texto a blanco
+      background-color: #003ea8 !important; // Cambia el color de fondo del botón
+    }
+}
